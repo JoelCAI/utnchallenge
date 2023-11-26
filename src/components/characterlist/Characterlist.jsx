@@ -10,17 +10,16 @@ function NavPage(props) {
             <button className='btn btn-primary btn-sm'
             onClick={()=> props.setPage(props.page -1)}
             >
-            Page {props.page}
+            Page {props.page - 1}
             </button>
             <p className='m-3'>Page: {props.page}</p>
             <button className='btn btn-primary btn-sm'
             onClick={()=> props.setPage(props.page +1)}
             >
-            Page {props.page}
+            Page {props.page + 1}
             </button>
         </div>
     )
-  
 }
 
 function CharacterList () {
@@ -36,14 +35,11 @@ function CharacterList () {
         }
 
         fetchData();
-    
     }, [page]);
 
     return (
         <div className='container'>
-
             <NavPage page= {page} setPage= {setPage} />
-
             <div className='row'>
                 {characters.map((character) => {
                     return (
@@ -54,10 +50,8 @@ function CharacterList () {
                 })
                 }
             </div>
-
             <NavPage page= {page} setPage= {setPage} />
         </div>
-     
     )
 }
 
