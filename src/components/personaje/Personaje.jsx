@@ -34,7 +34,7 @@ const Personaje = () => {
   return (
     <div className="contenido container-fluid">
       <h1 className='text-warning'>BUSQUE SU PERSONAJE</h1>
-      <div inline>
+      <div inline="true">
         <Row>
           <Col xs="auto">
             <Form.Control

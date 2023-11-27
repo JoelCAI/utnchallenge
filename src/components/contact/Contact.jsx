@@ -76,7 +76,7 @@ const Contact = () => {
                             </div>
                             <div className='row justify-content-center'>
                                 <div className='col-6 m-5'>
-                                    <div class="form-floating">
+                                    <div className="form-floating">
                                         <textarea className="form-control bg-transparent border border-warning text-white p-5" placeholder="Deje su comentario aqui" id="floatingTextarea2" style={{height: '20rem'}}></textarea>
                                     </div>
                                 </div>
