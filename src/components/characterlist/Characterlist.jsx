@@ -7,13 +7,13 @@ import Character from '../character/Character';
 function NavPage(props) {
     return (
         <div className='d-flex justify-content-between align-items-center m-4'>
-            <button className='btn btn-primary btn-sm'
-            onClick={()=> props.setPage(props.page -1)}
+            <button className='btn btn-warning btn-md p-2.5 border border-black rounded-4 shadow-lg fs-5'
+            onClick={()=> props.page == 1 ? props.setPage(props.page) : props.setPage(props.page -1)}
             >
             Page {props.page - 1}
             </button>
-            <p className='m-3'>Page: {props.page}</p>
-            <button className='btn btn-primary btn-sm'
+            <p className='m-3 fs-2 fw-bold text-warning'>Page: {props.page}</p>
+            <button className='btn btn-warning btn-md p-2.5 border border-black rounded-4 shadow-lg fs-5'
             onClick={()=> props.setPage(props.page +1)}
             >
             Page {props.page + 1}
@@ -43,7 +43,7 @@ function CharacterList () {
             <div className='row'>
                 {characters.map((character) => {
                     return (
-                        <div className='col-md-4' key={character.id}>
+                        <div className='col-lg-4 col-md-6 col-sm-6' key={character.id}>
                              <Character  character={character}/>  
                         </div>
                     );

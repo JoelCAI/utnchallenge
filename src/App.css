@@ -1,4 +1,9 @@
 #root {
   max-width: 100%;
   margin: auto 0;
+  background-image: url(../src/components/personaje/pexels-min-an-813269.jpg);
+  background-repeat: repeat;
+  background-size: contain;
+  background-position: center;
+
 }
