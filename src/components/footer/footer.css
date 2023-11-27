@@ -1,0 +1,39 @@
+.container-foot{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #00BFFF;
+}
+.container-footer{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.container-footer div{
+    margin: 0 100px;
+}
+.container-footer p{
+    margin: 5px;
+}
+.container-footer a{
+    color: #000;
+}
+.container-footer a:hover{
+    color: #fff;
+}
+
+@media (max-width: 700px) {
+    .container-foot{
+        height: 500px;
+    }
+    .container-foot h5{
+        text-align: center;
+    }
+    .container-footer div{
+        margin: 0 30px;
+    } 
+ }
+
